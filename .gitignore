@@ -1,32 +1,30 @@
-# Laravel環境ファイル（開発専用ファイルは追跡しない）
-.env
-.env.*
+# Laravel関連ファイルをすべて無視
+src/
 
-# Laravelのキャッシュやストレージ関連ファイル
-bootstrap/cache/*
-!bootstrap/cache/.gitignore
-
-storage/logs/*
-storage/framework/*
-!storage/framework/.gitignore
-storage/*.key
-
-# Composerの依存ファイル（再現可能なので除外）
-vendor/
-
-# Node.js関連（再現可能なので除外）
+# その他のLaravelプロジェクト関連を無視
+bootstrap/
+config/
+database/
 node_modules/
+public/
+resources/
+storage/
+tests/
+vendor/
+artisan
+composer.json
+composer.lock
+package.json
+package-lock.json
+phpunit.xml
+vite.config.js
 
-# 動的に生成される公開ディレクトリ
-public/storage
-public/hot
-npm-debug.log*
-yarn-error.log*
-
-# IDE関連ファイル（不要）
-.idea/
-.vscode/
-
-# OS関連ファイル
+# 動的に生成されるファイルやOS固有のファイルを除外
+.env
+.env.example
 .DS_Store
 Thumbs.db
+
+# Docker関連ファイルはGitに含める
+!docker-compose.yml
+!docker/
