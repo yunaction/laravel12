@@ -1,26 +1,7 @@
 # Laravel関連ファイルをすべて無視
-src/
-
-# その他のLaravelプロジェクト関連を無視
-bootstrap/
-config/
-database/
-node_modules/
-public/
-resources/
-storage/
-tests/
-vendor/
-artisan
-composer.json
-composer.lock
-package.json
-package-lock.json
-phpunit.xml
-vite.config.js
+.idea/
 
 # 動的に生成されるファイルやOS固有のファイルを除外
-.env
 .env.example
 .DS_Store
 Thumbs.db
