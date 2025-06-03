@@ -1,0 +1,35 @@
+# Node.js関連
+node_modules/
+
+# Composer関連
+vendor/
+
+# 環境変数・設定ファイル
+.env
+
+# Laravelキャッシュ・セッション・ログ関連
+storage/app/*
+storage/framework/*
+storage/logs/*
+!storage/framework/.gitignore
+!storage/logs/.gitignore
+bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+# IDE/エディタ関連
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS/エディタ自動生成ファイル
+.DS_Store
+Thumbs.db
+
+# Gitに不要なファイル
+*.bak
+*.tmp
+*.lock
+
+# PHPUnitキャッシュ
+.phpunit.result.cache
