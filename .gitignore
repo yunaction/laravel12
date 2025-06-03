@@ -1,0 +1,32 @@
+# Laravel環境ファイル（開発専用ファイルは追跡しない）
+.env
+.env.*
+
+# Laravelのキャッシュやストレージ関連ファイル
+bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+storage/logs/*
+storage/framework/*
+!storage/framework/.gitignore
+storage/*.key
+
+# Composerの依存ファイル（再現可能なので除外）
+vendor/
+
+# Node.js関連（再現可能なので除外）
+node_modules/
+
+# 動的に生成される公開ディレクトリ
+public/storage
+public/hot
+npm-debug.log*
+yarn-error.log*
+
+# IDE関連ファイル（不要）
+.idea/
+.vscode/
+
+# OS関連ファイル
+.DS_Store
+Thumbs.db
