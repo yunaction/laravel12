@@ -28,4 +28,7 @@ Available commands:
   help        Display help for a command
   list        List commands
   new         Create a new Laravel application
+  
+# プロジェクト作成
+root@00350d98b54f:/var/www/html# composer create-project --prefer-dist laravel/laravel . 
 ```
